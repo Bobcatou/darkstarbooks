@@ -304,3 +304,44 @@ genesis_register_sidebar( array(
 	'name'        => __( 'Front Page 3', 'digital-pro' ),
 	'description' => __( 'This is the 3rd section on the front page.', 'digital-pro' ),
 ) );
+
+
+
+//* Listen to the Wind Media Modifications
+
+add_filter( 'soliloquy_output', 'sk_soliloquy_images_to_array', 10, 2 );
+/**
+ * Circumvents the slider output and allows access to raw format.
+ *
+ * @param string $slider   The slider HTML.
+ * @param array $data      Array of slider data.
+ * @return array URLs of slide images
+ */
+function sk_soliloquy_images_to_array( $slider, array $data ) {
+
+	// if this is not the Front Page 1 Soliloquy slider, abort
+	if ( 43 !== $data['id'] ) { // replace 529 with the id of Front Page 1 slider
+		return $slider;
+	}
+
+	$images = array(); // Create an array variable to store URLs of all slider images
+
+	// Loop through slide images one by one
+	foreach ( (array) $data['slider'] as $id => $item ) {
+		// Skip over images that are pending (ignore if in Preview mode)
+		if ( isset( $item['status'] ) && 'pending' == $item['status'] && ! is_preview() ) {
+			continue;
+		}
+
+		// Store the URL of slide image in a variable
+		$src = wp_get_attachment_image_src( $id, 'full' );
+
+		// Store all the URLs of slide images in an array
+		$images[] = $src[0];
+	}
+
+	// Return the array of slider images' URLs, encoded into JSON string
+	return json_encode( $images );
+
+}
+
