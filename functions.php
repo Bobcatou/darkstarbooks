@@ -345,3 +345,21 @@ function sk_soliloquy_images_to_array( $slider, array $data ) {
 
 }
 
+
+// Register Instagram widget area.
+genesis_register_sidebar( array(
+	'id'          => 'instagram',
+	'name'        => __( 'Instagram', 'theme-name' ),
+	'description' => __( 'This is the instagram widget area.', 'theme-name' ),
+) );
+
+// Add Instagram widget before footer.
+add_action( 'genesis_before_footer', 'sp_instagram_feed_widget' );
+function sp_instagram_feed_widget() {
+
+	genesis_widget_area( 'instagram', array(
+		'before' => '<div class="instagram"><div class="wrap">',
+		'after'  => '</div></div>',
+	) );
+
+}
