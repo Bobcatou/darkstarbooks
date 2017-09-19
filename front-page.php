@@ -134,6 +134,18 @@ function digital_front_page_widgets() {
 		'after'  => '</div></div></div>',
 	) );
 
+
+// Add Instagram widget before footer.
+
+	genesis_widget_area( 'instagram', array(
+		'before' => '<div class="instagram"><div class="wrap">',
+		'after'  => '</div></div>',
+	) );
+
+
+
+
+
 }
 
 //* Add opening markup for blog section
