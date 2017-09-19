@@ -353,13 +353,18 @@ genesis_register_sidebar( array(
 	'description' => __( 'This is the instagram widget area.', 'theme-name' ),
 ) );
 
-// Add Instagram widget before footer.
-add_action( 'genesis_before_footer', 'sp_instagram_feed_widget' );
-function sp_instagram_feed_widget() {
 
-	genesis_widget_area( 'instagram', array(
-		'before' => '<div class="instagram"><div class="wrap">',
-		'after'  => '</div></div>',
-	) );
 
+//* Customize footer credits
+add_filter( 'genesis_footer_creds_text', 'sp_footer_creds_text' );
+function sp_footer_creds_text() {
+     echo '<div class="lwm_credits"><p>';
+     echo 'Copyright &copy; ';
+     echo date('Y');
+     echo ' &middot; <a href="http://darkstarbookstore.com">Dark Star Bookstore</a> &middot; Built and Designed by: <a href="http://www.listentothewindmedia.com" title="Listen to the Wind Media">Listen to the Wind Media</a>';
+     echo '</p></div>';
 }
+
+
+
+
