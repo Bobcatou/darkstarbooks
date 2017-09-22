@@ -346,6 +346,25 @@ function sk_soliloquy_images_to_array( $slider, array $data ) {
 }
 
 
+
+// Register widget areas.
+genesis_register_sidebar( array(
+	'id'          => 'front-page-4-left',
+	'name'        => __( 'Front Page 4-Left', 'digital-pro' ),
+	'description' => __( 'This is the 4th/left section on the front page.', 'digital-pro' ),
+) );
+genesis_register_sidebar( array(
+	'id'          => 'front-page-4-middle',
+	'name'        => __( 'Front Page 4-Middle', 'digital-pro' ),
+	'description' => __( 'This is the 4th section/middle on the front page.', 'digital-pro' ),
+) );
+genesis_register_sidebar( array(
+	'id'          => 'front-page-4-right',
+	'name'        => __( 'Front Page 4-Right', 'digital-pro' ),
+	'description' => __( 'This is the 4th section/right on the front page.', 'digital-pro' ),
+) );
+
+
 // Register Instagram widget area.
 genesis_register_sidebar( array(
 	'id'          => 'instagram',
