@@ -133,6 +133,17 @@ Loaded on the front page */
 	color: #232525;
 }
 
+#front-page-1 h1, #front-page-1 h3 {
+    color: #fff;
+}
+#front-page-1 h1 {
+	font-size: 7.6rem;
+}
+
+#front-page-1 h3 {
+	font-size: 3.8rem;
+}
+
 /* Front Page 2
 --------------------------------------------- */
 
@@ -251,7 +262,7 @@ Loaded on the front page */
 --------------------------------------------- */
 
 .front-page-3 {
-	background-color: #232525;
+	background-color: #40485b;
 /*	padding: 8% 4%; */
 	padding: 4% 4%;
 	text-align: center;
@@ -320,6 +331,35 @@ Loaded on the front page */
 	background-color: #fff;
 	border: none;
 	color: #232525;
+}
+
+/* Front Page 4 Widgets...Added from LWM */
+.front-page-4 {
+    padding: 4% 4%;
+}
+
+.hours h3, .location h3 {
+	font-size: 2.2rem;
+	font-size: 22px;
+
+}
+.hours p, .location p {
+	margin: 0;
+
+}
+
+.instagram h3 {
+	color: #fff;
+}
+
+#wdi_feed_0 .wdi_pagination_ctrl {
+    margin: 0px 5px 0px 5px !important;
+    color: #000;
+}
+
+#wdi_feed_0 .wdi_pagination {
+	font-size: 2.2rem !important;
+	font-size: 22px !important;
 }
 
 
