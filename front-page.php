@@ -135,15 +135,29 @@ function digital_front_page_widgets() {
 	) );
 
 
+
+//* Front Page 4th Row.
+
+		genesis_widget_area( 'front-page-4-left', array(
+			'before' => '<div class="front-page-4"><div class="one-third first">',
+			'after' => '</div>',
+	) );
+			genesis_widget_area( 'front-page-4-middle', array(
+			'before' => '<div class="one-third">',
+			'after' => '</div>',
+	) );
+			genesis_widget_area( 'front-page-4-right', array(
+			'before' => '<div class="one-third">',
+			'after' => '</div></div><div class="clearfix"></div>
+',	) );
+
+
 // Add Instagram widget before footer.
 
 	genesis_widget_area( 'instagram', array(
 		'before' => '<div class="instagram"><div class="wrap">',
 		'after'  => '</div></div>',
 	) );
-
-
-
 
 
 }
