@@ -1845,7 +1845,7 @@ p.form-submit,
 .footer-widgets-2,
 .footer-widgets-3 {
 	float: left;
-	padding: 90px 4%;
+	padding: 4% 4%;
 }
 
 .footer-widgets-1 {
@@ -1995,7 +1995,8 @@ p.form-submit,
 
 /* Instagram area */
 .instagram {
-    padding: 40px 4%;
+    padding: 4% 4%;
+    background: #40485b
 }
 
 /* Media Queries
