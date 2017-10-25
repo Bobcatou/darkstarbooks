@@ -148,7 +148,7 @@ function digital_front_page_widgets() {
 	) );
 			genesis_widget_area( 'front-page-4-right', array(
 			'before' => '<div class="one-third">',
-			'after' => '</div></div><div class="clearfix"></div>
+			'after' => '</div><div class="clearfix"></div></div>
 ',	) );
 
 
