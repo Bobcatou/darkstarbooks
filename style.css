@@ -2005,6 +2005,10 @@ p.form-submit,
     background: #40485b
 }
 
+
+#wdi_spider_popup_left, #wdi_spider_popup_right {
+	width: 0 !important;
+}
 /*Styling for Next/Previous*/
 
 .wpv-filter-next-link {
