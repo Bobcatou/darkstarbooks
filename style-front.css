@@ -134,14 +134,14 @@ Loaded on the front page */
 }
 
 #front-page-1 h1, #front-page-1 h3 {
-    color: #fff;
+    color:#fff;
 }
 #front-page-1 h1 {
-	font-size: 7.6rem;
+	font-size: 9rem;
 }
 
 #front-page-1 h3 {
-	font-size: 3.8rem;
+	font-size: 4rem;
 }
 
 /* Front Page 2
