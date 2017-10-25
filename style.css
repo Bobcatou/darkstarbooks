@@ -150,7 +150,7 @@ body > div {
 body {
 	background-color: #fff;
 	color: #5b5e5e;
-	font-family: 'Lora', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 	font-size: 16px;
 	font-size: 1.6rem;
 	font-weight: 400;
@@ -269,7 +269,7 @@ h4,
 h5,
 h6 {
 	color: #232525;
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Heebo', sans-serif;
 	font-weight: 700;
 	line-height: 1.2;
 	margin: 0 0 20px;
@@ -483,7 +483,7 @@ input[type="submit"],
 	border: none;
 	color: #fff;
 	cursor: pointer;
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Heebo', sans-serif;
 	font-size: 14px;
 	font-size: 1.4rem;
 	font-weight: 500;
@@ -516,7 +516,7 @@ input[type="submit"],
 
 a.more-link {
 	display: inline-block;
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Heebo', sans-serif;
 	font-size: 12px;
 	font-size: 1.2rem;
 	font-weight: 600;
@@ -1131,7 +1131,7 @@ a[rel~="attachment"]:hover,
 }
 
 .featured-content p.entry-meta {
-	font-family: "Poppins", sans-serif;
+	font-family: "Heebo", sans-serif;
 	font-size: 10px;
 	font-size: 1rem;
 	font-weight: 400;
@@ -1159,7 +1159,7 @@ a[rel~="attachment"]:hover,
 --------------------------------------------- */
 
 .enews-widget ::-moz-placeholder {
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Heebo', sans-serif;
 	font-size: 14px;
 	font-size: 1.4rem;
 	font-weight: 400;
@@ -1168,7 +1168,7 @@ a[rel~="attachment"]:hover,
 }
 
 .enews-widget ::-webkit-input-placeholder {
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Heebo', sans-serif;
 	font-size: 14px;
 	font-size: 1.4rem;
 	font-weight: 400;
@@ -1177,7 +1177,7 @@ a[rel~="attachment"]:hover,
 }
 
 .enews-widget input {
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Heebo', sans-serif;
 	font-size: 14px;
 	font-size: 1.4rem;
 	font-weight: 400;
@@ -1330,7 +1330,7 @@ a[rel~="attachment"]:hover,
 }
 
 .site-title {
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Heebo', sans-serif;
 	font-size: 20px;
 	font-size: 2rem;
 	font-weight: 700;
@@ -1352,8 +1352,14 @@ a[rel~="attachment"]:hover,
 
 .header-image .site-header {
 	padding: 9px 40px;
+	border-bottom: 1px dotted #535353;
+    padding-bottom: 20px;
 }
 
+
+.home.header-image .site-header {
+	border-bottom: 0px;
+}
 .header-image .site-header.shrink {
 	padding: 0 40px;
 }
@@ -1400,9 +1406,9 @@ a[rel~="attachment"]:hover,
 	border-bottom-width: 0;
 	color: #232525;
 	display: block;
-	font-family: 'Poppins', sans-serif;
-	font-size: 12px;
-	font-size: 1.2rem;
+	font-family: 'Heebo', sans-serif;
+	font-size: 17px;
+	font-size: 1.7rem;
 	font-weight: 600;
 	letter-spacing: 0.5px;
 	padding: 10px;
@@ -1602,7 +1608,7 @@ a[rel~="attachment"]:hover,
 --------------------------------------------- */
 
 p.entry-meta {
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Heebo', sans-serif;
 	font-size: 12px;
 	font-size: 1.2rem;
 	font-weight: 600;
@@ -1679,7 +1685,7 @@ p.entry-meta {
 
 .pagination {
 	clear: both;
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Heebo', sans-serif;
 	font-size: 12px;
 	font-size: 1.2rem;
 	font-weight: 600;
@@ -1743,7 +1749,7 @@ p.entry-meta {
 }
 
 .sidebar .widgettitle {
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Heebo', sans-serif;
 	font-size: 12px;
 	font-size: 1.2rem;
 	font-weight: 700;
@@ -1902,7 +1908,7 @@ p.form-submit,
 
 .footer-widgets a {
 	border-bottom-width: 0;
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Heebo', sans-serif;
 	font-size: 14px;
 	font-size: 1.4rem;
 	font-weight: 600;
@@ -1998,6 +2004,36 @@ p.form-submit,
     padding: 4% 4%;
     background: #40485b
 }
+
+/*Styling for Next/Previous*/
+
+.wpv-filter-next-link {
+    float: right;
+}
+
+ul.pagination.entry-content ul > li {
+	list-style: none;
+}
+
+
+/*End Views Pagination styling*/
+
+/* Frontpage Titling */
+
+section#custom_html-2 {
+    background: #434B55;
+    width: 60%;
+    padding: 20px;
+    border: solid 5px #333;
+    border-radius: 10px;
+
+}
+
+
+section#custom_html-2 h1 {
+	color:#d9bca2;
+}
+
 
 /* Media Queries
 ---------------------------------------------------------------------------------------------------- */
