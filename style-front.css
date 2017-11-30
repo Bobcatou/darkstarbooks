@@ -348,6 +348,12 @@ Loaded on the front page */
 
 }
 
+/* Map */
+h4.bs-map {
+	text-align: center;
+}
+
+
 .instagram h3 {
 	color: #fff;
 	text-align: center;
