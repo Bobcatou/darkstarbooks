@@ -385,5 +385,27 @@ function sp_footer_creds_text() {
 }
 
 
+//*Remove Woo Product Tabs
 
+add_filter( 'woocommerce_product_tabs', 'woo_remove_product_tabs', 98 );
 
+function woo_remove_product_tabs( $tabs ) {
+
+    unset( $tabs['description'] );      	// Remove the description tab
+    unset( $tabs['reviews'] ); 			// Remove the reviews tab
+    unset( $tabs['additional_information'] );  	// Remove the additional information tab
+
+    return $tabs;
+
+}
+
+//Woocommerce 3.0 support for new Lightbox
+//https://createandcode.com/broken-photo-gallery-and-lightbox-after-woocommerce-3-0-upgrade/
+
+add_action( 'after_setup_theme', 'woo3lightbox_setup' );
+
+function woo3lightbox_setup() {
+add_theme_support( 'wc-product-gallery-lightbox' );
+//add_theme_support( 'wc-product-gallery-zoom' );
+add_theme_support( 'wc-product-gallery-slider' );
+}
