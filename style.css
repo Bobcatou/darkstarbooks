@@ -270,7 +270,7 @@ h5,
 h6 {
 	color: #232525;
 	font-family: 'Heebo', sans-serif;
-	font-weight: 700;
+	font-weight: 500;
 	line-height: 1.2;
 	margin: 0 0 20px;
 }
@@ -1412,7 +1412,7 @@ a[rel~="attachment"]:hover,
 	font-family: 'Heebo', sans-serif;
 	font-size: 17px;
 	font-size: 1.7rem;
-	font-weight: 600;
+	font-weight: 500;
 	letter-spacing: 0.5px;
 	padding: 10px;
 	text-transform: uppercase;
@@ -2031,6 +2031,7 @@ section#custom_html-2 {
     padding: 20px;
     border: solid 5px #333;
     border-radius: 10px;
+    display:none;
 
 }
 
